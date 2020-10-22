@@ -1,0 +1,7 @@
+.flash-messages
+  - if notice
+    p.alert.alert-success.flash-messages__container
+      = notice
+  - if alert
+    p.alert.alert-danger.flash-messages__container
+      = alert

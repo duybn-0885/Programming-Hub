@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    title ProgrammingHub
+    = favicon_link_tag
+    = csrf_meta_tags
+    = csp_meta_tag
+    = action_cable_meta_tag
+    = stylesheet_link_tag "application", media: "all"
+    = javascript_include_tag "application"
+  body
+    = render "layouts/header"
+    = render "layouts/flash_messages"
+    .container
+      = yield
+    = render "layouts/footer"
